@@ -1,0 +1,28 @@
+VALUEBRIDGE 360 Phase 1 test report (21 Nov 2026)
+
+Input: supplied BancABC_2026.csv (synthetic challenge reference records)
+Source rows: 1,048,575 | Customers: 50,000 | Accounts: 98,475
+Qualifying transactions: 873,812
+Latest transaction: 2026-10-30 (partial October month)
+Calculated current product-review candidates: 30,039
+
+PASS: 13 Python unit tests (including new out-of-order and ID-map tests).
+PASS: Python 10-file snapshot validator on final challenge snapshot.
+PASS: JavaScript 10-file snapshot validator on final challenge snapshot.
+PASS: Portable local HTTP server health, pointer and JSON route checks.
+PASS: Compiled JavaScript syntax check with Node.
+
+LIMITATION: A visual Playwright browser run was attempted but navigation to
+127.0.0.1 was blocked by the execution environment's browser administrator
+policy. This is not evidence of an app UI failure, but end-to-end visual
+interactions have not been verified here.
+
+LIMITATION: npm packages could not be fetched in this restricted execution
+container. The existing compiled frontend was patched for the new data-mode
+contract and passes syntax checks; a fresh TypeScript/Vite rebuild has not
+been run. The source has matching edits for a future normal npm build.
+
+KNOWN FUTURE WORK: separate retention/growth prioritisation, historical CDI
+series, model robustness, and non-browser persistence. Current opportunity
+ranking does not yet incorporate CDI; current CDI is a deterioration signal,
+not a customer churn probability.

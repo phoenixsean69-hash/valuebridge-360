@@ -1,0 +1,10 @@
+SOURCE-LINKED BANCABC EDITION — VERIFICATION
+Source BancABC_2026.csv: 1,048,575 transactions, 50,000 Customer IDs, 98,475 accounts.
+Original IDs and synthetic legal names preserved from the CSV.
+All 1,048,575 rows indexed into 128 read-on-demand local files.
+Python unit tests: 14 passed.
+Python + JavaScript snapshot validators: PASS.
+Offline HTTP health, customer transaction lookup, unknown-ID 404: PASS.
+Browser visual automation could not be completed because local browser navigation
+was blocked by the sandbox's administrative network policy.
+The 'real' source is the hackathon-supplied synthetic CSV, not live bank records.

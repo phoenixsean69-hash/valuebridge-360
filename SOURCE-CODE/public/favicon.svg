@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VALUEBRIDGE 360">
+  <rect width="64" height="64" rx="16" fill="#102A43"/>
+  <path d="M14 45V34a18 18 0 0 1 36 0v11" fill="none" stroke="#47C98A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 45h44M21 45V35m11 10V31m11 14V35" fill="none" stroke="#47C98A" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "files_validated": 10,
+  "customer_count": 50000,
+  "segment_count": 6,
+  "recommendations": 30039,
+  "rankings": 30039,
+  "migration_rows": 1026,
+  "alerts": 24346,
+  "staff_actions": 250,
+  "model_metric_policy": "synthetic-only chronological evaluation; null values remain unavailable",
+  "data_mode": "competition"
+}
