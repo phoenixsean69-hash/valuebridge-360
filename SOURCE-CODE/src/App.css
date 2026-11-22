@@ -90,3 +90,56 @@
 .source-table-scroll th{background:#f5f8fa;color:#62798c;font-weight:700}
 .source-pagination{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
 .source-pagination .button{font-size:10px;padding:7px 11px}
+
+/* ValueBridge 360 - Responsive chart sizing */
+
+.chart-frame {
+  height: 290px;
+  min-width: 0;
+}
+
+.chart-frame.short-chart {
+  height: 240px;
+}
+
+/* Donut chart */
+.chart-frame.segment-pie-frame {
+  height: 255px;
+  min-width: 0;
+}
+
+/* Stack chart and legend when space is limited */
+.segment-distribution {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+.segment-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+/* Side-by-side layout on large screens */
+@media (min-width: 1500px) {
+  .segment-distribution {
+    grid-template-columns: minmax(0, 1fr) 200px;
+  }
+
+  .segment-legend {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .chart-frame {
+    height: 230px;
+  }
+
+  .chart-frame.segment-pie-frame {
+    height: 210px;
+  }
+}
+
